@@ -15,9 +15,7 @@ function Routes () {
                 <Route exact path="/" component={Home}/>
                 <Route path="/boards" component={Board} />
                 <Route path="/profile" component={Profile} />
-
-                <Route path="/error" component={PageNotFound}/>
-                <Redirect path="*" to="/error"/>
+                <Route component={PageNotFound}/>
             </Switch>
         </BrowserRouter>
     )
